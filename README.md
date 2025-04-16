@@ -15,3 +15,6 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+https://www.youtube.com/watch?v=vXrv3kruvwE
+https://www.youtube.com/watch?v=ivcbaIhrcsE
