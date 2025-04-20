@@ -36,11 +36,10 @@ Which brings us to the BFS loop. For each node, $n$, we perform a handful of
 constant time operations. Within the while loop, we use shift on our queue,
 which requires all elements to be shifted left in the array, taking $\Theta(n).$
 Then we work through our edges, to find neighbors to our current node, taking
-$\Theta(m).$ Multiplying these nested time complexities gives us $\Theta(n \cdot
-n \cdot m)$ or $\Theta(n^2 \cdot m)$.  
+$\Theta(m).$ This gives us $\Theta(n \cdot n + m)$ or $\Theta(n^2 + m)$.  
 
 Not accounting for lower order terms, or constants, our final time complexity
-is $\Theta(n^2 \cdot m)$.  
+is $\Theta(n^2 + m)$.  
 
 ## Sources
 
