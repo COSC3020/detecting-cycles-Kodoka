@@ -16,12 +16,10 @@ function hasCycle(graph)
 
     // Add each unique vertex to our array.
     vertexArray = [...vertexSet];
-    console.log(vertexArray);
 
     // For each element in vertexArray, add an initial status of 0 to the
     // corresponding index of the status array.
     vertexStatus = Array(vertexArray.length).fill(0);
-    console.log(vertexStatus);
 
     // For each element in vertexArray, add an empty array to our
     // adjacencyArray.
@@ -29,7 +27,6 @@ function hasCycle(graph)
     {
         adjacencyArray[i] = [];
     }
-    console.log(JSON.stringify(adjacencyArray));
 
     // For each edge...
     for(var i = 0; i < graph.length; i++)
@@ -38,7 +35,6 @@ function hasCycle(graph)
         adjacencyArray[vertexArray.indexOf(graph[i][0])].push(graph[i][1]);
         adjacencyArray[vertexArray.indexOf(graph[i][1])].push(graph[i][0]);
     }
-    console.log(JSON.stringify(adjacencyArray));
 
     // For each node...
     for(var nodeIndex = 0; nodeIndex < vertexArray.length; nodeIndex++)
@@ -90,5 +86,3 @@ function hasCycle(graph)
     // No cycles found.
     return false;
 }
-
-console.log(hasCycle([[1, 2], [0, 3], [1, 4], [2, 5], [5, 1]]));
